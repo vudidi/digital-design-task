@@ -1,0 +1,42 @@
+.menu__nav {
+  max-width: 380px;
+  width: 100%;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.menu-link {
+  font-size: 18px;
+  color: $beige;
+  border-bottom: 2px solid $blue;
+  transition: all ease 0.5s;
+  &.theme-dark {
+    border-bottom: 2px solid $orange;
+  }
+  &:hover {
+    border-bottom: 2px solid $beige;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .menu__nav {
+    max-width: 330px;
+  }
+  .menu-link {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .menu__nav {
+    max-width: 290px;
+  }
+  .menu-link {
+    font-size: 14px;
+  }
+}

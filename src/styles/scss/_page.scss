@@ -1,0 +1,59 @@
+body {
+  height: auto;
+  width: 100%;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background-color: $beige;
+  &#theme-dark {
+    background-color: $violetDark;
+  }
+}
+
+.page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.toTopBtn {
+  display: none;
+  background-image: url("../../assets/img/arrow-up.svg");
+  background-size: 36px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 24px;
+  background-color: $beige;
+  border-radius: 50%;
+  border: 2px solid $violetDark;
+  position: fixed;
+  right: 50px;
+  bottom: 100px;
+  transition: all ease 0.5s;
+  &:hover {
+    background-color: #fff;
+  }
+}
+
+.snackbar {
+  display: none;
+  z-index: 2;
+  position: fixed;
+  left: 50px;
+  bottom: 50px;
+  background-color: $green;
+  color: $beige;
+  padding: 15px 30px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1500px) {
+  .toTopBtn {
+    right: 10px;
+  }
+}
