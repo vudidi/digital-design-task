@@ -1,2 +1,2 @@
-# digital-design-test
+# digital-design-task
 Входное задание Frontend-разработка Digital Design
